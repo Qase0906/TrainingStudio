@@ -1,0 +1,711 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+header {    
+    background-color: white;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 8px black;
+    z-index: 10;
+}
+
+header h1{
+    display: none;
+}
+
+.container {
+    width: min(90%, 1120px);   
+    margin-inline: auto;
+}
+
+.desktop-menus {   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-menus h1 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    display: block;
+}
+.desktop-menus h1 span{
+    color: #ed563b;
+}
+
+ ul {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+ ul li {
+    list-style: none;
+}
+
+ ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 1rem;
+    background-color: #ed563b;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f66b53;
+}
+
+/* HERO SECTION STYLES */
+
+video {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;    
+    position: relative;
+    overflow: hidden;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(13, 13, 51, 0.7);
+}
+
+.hero #bg-video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    z-index: -1;
+    object-fit: cover;
+    
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;    
+}
+
+.content h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* mobile Menus */
+
+.mobile-menu {
+    display: none;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+    display: none;
+}
+
+
+/* PROGRAM SECTION */
+
+.program {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.choose-program {
+    width: 30rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;    
+    margin: 8.75rem 0 4rem 0rem;
+    
+}
+
+.program h1 {
+    font-size: 1.75rem;
+    color: #232D39;
+}
+
+.program h1 span {
+    color: #ed563b;
+}
+
+.program p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.services .service {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.services .service .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    
+}
+.services .service .contents h4{
+    font-size: 1.1875rem;
+    color: #232D39;
+}
+
+.services .service .contents p{
+    font-size: 0.875rem;
+    color: #7a7a7a;    
+}
+
+.contents button {
+    border: none;
+    background-color: transparent;
+    font-size: 0.675rem;
+    color: #ed563b;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.service p a{
+    text-decoration: none;
+}
+
+
+/* CALL TO ACTION */
+
+span {
+    color: #ed563b;
+}
+
+.call-to-action {
+    width: 100%;
+    height: 26.23125rem;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg")center / cover no-repeat;
+    margin-top: 10rem;
+}
+
+.call {    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.call-to-action .container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    gap: 1.5rem; 
+}
+
+.call-to-action .container .content h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+.call-to-action .container .content p{
+    padding: 0rem 6rem;
+    text-align: center;
+}
+
+/* CLASSES */
+
+.grid-classes {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 123.5px);
+    gap: 4rem;
+    /* margin-bottom: 5rem; */
+}
+
+.left-side {    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.class {    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 2rem;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
+    padding: 2rem 0rem;    
+}
+
+.contents h4 {
+    font-size: 1.1875rem;
+}
+.contents h4 span{
+    font-size: 1.1875rem;
+}
+
+.class.btn {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0rem;   
+    font-size: 1.1875rem; 
+}
+
+.right-col img {
+    width: 100%;
+}
+
+.right-col {
+    grid-column: 2 /span 3;
+    grid-row: 1 / span 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right-col .contents {
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    gap: 1rem;
+      
+}
+
+.right-col .contents h4 {
+    font-size: 1.1875rem;    
+}
+
+.right-col .contents p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+}
+
+.right-col .contents button{
+    text-align: left;
+    background-color: #ed563b;
+    padding: 0.9375rem 1.25rem;
+    color: white;
+    font-size: 0.9375rem;
+}
+
+/* CLASS SCHEDULE */
+
+.schedule-section {
+    height: 1063px;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg")center /  cover no-repeat;
+    margin-top: 4rem;    
+}
+
+.schedule-section .program .choose-program p{
+    color: white;
+}
+.schedule-section .program .choose-program h1{
+    color: white;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* overflow-x: auto; */
+}
+
+.days {
+    display: flex;
+    gap: 0.6rem;
+}
+.days span{
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.days span:hover{
+    color: #ed563b;
+}
+.days span:nth-child(1) {
+    color:#ed563b;
+}
+
+.table {
+    width: 90%;
+    overflow-x:auto;
+}
+
+.table table{
+    width: 100%;
+    height: 31.25rem;    
+    border-collapse: collapse;
+    
+}
+
+.table td{
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    color: white;
+}
+
+/* EXPERT TRAINERS */
+
+.trainers {    
+    display: flex;
+    justify-content: center;  
+    gap: 2rem;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.trainer {
+    width: 400px;
+    max-width: 652px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+    gap: 1rem;
+    
+}
+
+.trainer img {
+    width: 100%;
+}
+
+.user-info span {
+    font-size: 0.8rem;
+}
+
+.user-info h4 {
+    padding-block: 0.8rem;
+}
+
+.user-info p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* CONTACT AND MAP SECTION */
+.contact-section {    
+    margin:8rem 0rem 2rem 0rem;
+    
+}
+
+.contact-section .grid-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    
+}
+
+.map iframe {
+    width: 100%;
+    height: 600px;
+}
+
+.contact-bg {
+    height: 600px;
+    background: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg")center / cover no-repeat;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-form {
+    width: 480px;
+    height: 440px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+
+form input {
+    width: 46%;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 0px 0px 30px 25px;
+    /* border: none; */
+    border: 0.0425rem solid rgba(0, 0, 0, 0.1);
+}
+
+form input:nth-child(1){
+    margin-left: 0px;
+}
+
+.subject {
+    width: 100%;  
+    height: 40px;  
+    padding: 10px;
+    margin-left: 0px;
+}
+
+form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 0.0425rem solid rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+form .btn{
+    padding: 1rem 2.5rem;
+    margin-top: -10px;
+}
+
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 780px){
+    .desktop-menus {
+        display: none;
+    }  
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+    
+    header h1{
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;   
+        z-index: 11;
+        /* background-color: #ed563b;   
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%; */
+        /* color: white; */
+        font-size: 1.6rem;
+        cursor: pointer;       
+        
+    }  
+
+    .sticky {
+        position: fixed;
+    }
+
+    .hamburger i{
+        z-index: 99999;        
+    }
+
+    .mobile-menu {  
+           
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background-color: rgb(30, 30, 30);        
+        z-index: 10;  
+        inset: 0 0 0 0;     
+        /* margin-left: 30%;  */
+        transform: translateX(0%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu h1 {
+        color: white;
+        font-size: 1.9rem;
+        margin: 6rem 0 4rem 0; 
+        border-bottom: 1px solid white;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin-top: 9rem;   */
+        gap: 1rem;           
+          
+    }
+
+    .mobile-menu a {
+        color: white;
+        font-size: 1.3rem;       
+    }
+
+    .mobile-menu .btn {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu[data-visible = "false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+        display: none;
+    }
+
+    .hamburger i:nth-child(2){
+        color: white;
+    }
+
+    /* HERO SECTION RESPONSIVE */
+
+    .content {
+        gap: 2rem;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    /* CHOOSE PROGRAM AND SERVICES SECTION (RESPOSICE) */
+
+    .choose-program p{
+        padding-inline: 1rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* classes section */
+    .grid-classes {        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center; 
+        padding: 0rem 0rem;  
+        gap: 2rem;  
+        margin-bottom: 2rem;   
+    }
+
+    .class {    
+        display: flex;
+        justify-content: flex-start;    
+    }
+
+    .class img {    
+        margin-left: 2rem;   
+    }  
+    
+    .trainers {    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        gap: 2rem;        
+    }
+
+    .trainer {
+        width: 650px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section .grid-contact {
+        display: grid;
+        grid-template-columns: 1fr;       
+    }
+
+    form input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    
+}
+
+
+/* for mobile or less than 480px  */
+
+@media (min-width: 360px) and (max-width: 480px) {   
+
+    .call-to-action .container .content h1{
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+    .call-to-action .container .content p{
+        font-size: 1rem;       
+        padding: 0rem 0rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .days span{
+        font-size: 0.75rem;
+    }
+
+    .trainer{
+        width: 350px;
+    }
+
+    .contact-form {
+        width: 380px;
+        height: 440px;        
+    }
+
+}
